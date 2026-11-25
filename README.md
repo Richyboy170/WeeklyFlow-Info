@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/readme/weekly-flow-hero.svg" alt="Weekly Flow hero artwork" width="100%" />
+  <img src="weekly-flow-hero.svg" alt="Weekly Flow hero artwork" width="100%" />
 </div>
 
 <h1 align="center">Weekly Flow</h1>
@@ -136,7 +136,7 @@ This repository contains the production mobile app in `mobile/`, the Cloudflare 
 ## Architecture
 
 <div align="center">
-  <img src="docs/readme/system-map.svg" alt="Weekly Flow system architecture map" width="100%" />
+  <img src="system-map.svg" alt="Weekly Flow system architecture map" width="100%" />
 </div>
 
 ```text
@@ -197,7 +197,7 @@ WeeklyFlow/
 ## Scheduling Engine
 
 <div align="center">
-  <img src="docs/readme/scheduler-pipeline.svg" alt="Weekly Flow scheduler pipeline" width="100%" />
+  <img src="scheduler-pipeline.svg" alt="Weekly Flow scheduler pipeline" width="100%" />
 </div>
 
 The scheduler is intentionally local-first. It can generate a usable schedule without the network or AI.
