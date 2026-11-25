@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="540" viewBox="0 0 1180 540" role="img" aria-labelledby="title desc">
+  <title id="title">Weekly Flow scheduler pipeline</title>
+  <desc id="desc">A flow chart showing inputs, local scheduling, AI rerank, validation, and saved-plan learning.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBFDFF"/>
+      <stop offset="1" stop-color="#EEF8F4"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#214D63" flood-opacity="0.11"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#2E9BD6"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#4CA66A"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#6D57B8"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="1178" height="538" rx="29" fill="url(#bg)" stroke="#DBEAF0" stroke-width="2"/>
+  <text x="52" y="60" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="34" font-weight="850">Scheduling Pipeline</text>
+  <text x="52" y="92" fill="#5F788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17">Deterministic generation first, optional AI second, validation always.</text>
+
+  <g transform="translate(58 138)" filter="url(#shadow)">
+    <rect x="0" y="0" width="190" height="118" rx="22" fill="#FFFFFF" stroke="#E4EDF2"/>
+    <text x="26" y="38" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Inputs</text>
+    <text x="26" y="66" fill="#5F788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Activities + hours</text>
+    <text x="26" y="87" fill="#5F788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Fixed blocks</text>
+    <text x="26" y="108" fill="#5F788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Wake, sleep, off-days</text>
+  </g>
+
+  <g transform="translate(312 138)" filter="url(#shadow)">
+    <rect x="0" y="0" width="190" height="118" rx="22" fill="#EAF7EF" stroke="#D5EADB"/>
+    <text x="26" y="38" fill="#23633B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Chunk</text>
+    <text x="26" y="66" fill="#4D705B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Split activities into</text>
+    <text x="26" y="87" fill="#4D705B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">ideal session lengths</text>
+    <rect x="132" y="72" width="34" height="22" rx="7" fill="#BDE5C8"/>
+    <rect x="92" y="72" width="34" height="22" rx="7" fill="#BDE5C8"/>
+  </g>
+
+  <g transform="translate(566 138)" filter="url(#shadow)">
+    <rect x="0" y="0" width="190" height="118" rx="22" fill="#EAF7FF" stroke="#D6EDF9"/>
+    <text x="26" y="38" fill="#245875" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Score Slots</text>
+    <text x="26" y="66" fill="#4B6B7F" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Timing + sequence fit,</text>
+    <text x="26" y="87" fill="#4B6B7F" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">constraints + preferences</text>
+    <polyline points="120,92 132,78 144,88 156,56" fill="none" stroke="#2E9BD6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(820 138)" filter="url(#shadow)">
+    <rect x="0" y="0" width="190" height="118" rx="22" fill="#FFF3D7" stroke="#F5E3BA"/>
+    <text x="26" y="38" fill="#945E00" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Place Blocks</text>
+    <text x="26" y="66" fill="#735E33" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Canonical best slot or</text>
+    <text x="26" y="87" fill="#735E33" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">seeded near-best variant</text>
+  </g>
+
+  <g transform="translate(194 330)" filter="url(#shadow)">
+    <rect x="0" y="0" width="210" height="118" rx="22" fill="#F2EEFF" stroke="#E3DAFA"/>
+    <text x="26" y="38" fill="#5C43A8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">AI Rerank</text>
+    <text x="26" y="66" fill="#665D82" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Suggest up to 8 swaps</text>
+    <text x="26" y="87" fill="#665D82" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">from the local draft</text>
+  </g>
+
+  <g transform="translate(486 330)" filter="url(#shadow)">
+    <rect x="0" y="0" width="210" height="118" rx="22" fill="#FFFFFF" stroke="#E4EDF2"/>
+    <text x="26" y="38" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Validate</text>
+    <text x="26" y="66" fill="#5F788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">No overlaps, no locked</text>
+    <text x="26" y="87" fill="#5F788B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">moves, no off-day drift</text>
+    <path d="M152 73 L164 85 L186 56" fill="none" stroke="#4CA66A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(778 330)" filter="url(#shadow)">
+    <rect x="0" y="0" width="210" height="118" rx="22" fill="#EAF7EF" stroke="#D5EADB"/>
+    <text x="26" y="38" fill="#23633B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Keep + Learn</text>
+    <text x="26" y="66" fill="#4D705B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Save template and bias</text>
+    <text x="26" y="87" fill="#4D705B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">future schedules softly</text>
+  </g>
+
+  <path d="M248 197 H312" stroke="#2E9BD6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M502 197 H566" stroke="#2E9BD6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M756 197 H820" stroke="#2E9BD6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M915 256 C915 282 886 292 846 292 H354 C320 292 299 305 299 330" stroke="#6D57B8" stroke-width="3" fill="none" stroke-dasharray="8 8" marker-end="url(#arrowPurple)"/>
+  <text x="570" y="282" fill="#6D57B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="800">optional AI pass</text>
+  <path d="M404 389 H486" stroke="#2E9BD6" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <path d="M696 389 H778" stroke="#4CA66A" stroke-width="3" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <g transform="translate(52 486)">
+    <rect x="0" y="0" width="1076" height="30" rx="15" fill="#FFFFFF" stroke="#E4EDF2" opacity="0.92"/>
+    <text x="22" y="21" fill="#405A6E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">The local schedule is always usable. AI is a constrained optimization pass, never an unchecked schedule generator.</text>
+  </g>
+</svg>

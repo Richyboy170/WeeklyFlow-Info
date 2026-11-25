@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Weekly Flow app hero artwork</title>
+  <desc id="desc">A portfolio banner showing the Weekly Flow mobile planner, AI scheduling pipeline, and cloud backend.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9F1FF"/>
+      <stop offset="0.45" stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#E7F8EF"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.72"/>
+    </linearGradient>
+    <linearGradient id="phone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26354A"/>
+      <stop offset="1" stop-color="#101923"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="20" stdDeviation="24" flood-color="#1B4C65" flood-opacity="0.18"/>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1B4C65" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="1278" height="638" rx="35" fill="url(#sky)" stroke="#D8EAF2" stroke-width="2"/>
+  <path d="M0 490 C150 430 244 545 410 478 C604 400 730 560 900 480 C1050 410 1145 450 1280 395 L1280 640 L0 640 Z" fill="#C8EEDB" opacity="0.65"/>
+  <path d="M0 565 C205 510 380 616 600 540 C792 474 992 612 1280 520 L1280 640 L0 640 Z" fill="#BDE4F6" opacity="0.72"/>
+
+  <g transform="translate(74 82)">
+    <rect x="0" y="0" width="494" height="476" rx="30" fill="url(#glass)" stroke="#FFFFFF" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="42" y="68" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="800">Weekly Flow</text>
+    <text x="42" y="108" fill="#436073" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20">AI-assisted weekly planning that respects real life.</text>
+
+    <g transform="translate(42 152)">
+      <rect x="0" y="0" width="124" height="74" rx="18" fill="#EAF7FF" stroke="#D6EDF9"/>
+      <text x="20" y="32" fill="#2E9BD6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">LOCAL FIRST</text>
+      <text x="20" y="54" fill="#30475A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">Scheduler</text>
+
+      <rect x="144" y="0" width="124" height="74" rx="18" fill="#FFF3D7" stroke="#F5E3BA"/>
+      <text x="164" y="32" fill="#C47A00" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">AI ASSIST</text>
+      <text x="164" y="54" fill="#30475A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">OCR + Rerank</text>
+
+      <rect x="288" y="0" width="124" height="74" rx="18" fill="#EAF7EF" stroke="#D5EADB"/>
+      <text x="308" y="32" fill="#238653" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="700">CLOUD</text>
+      <text x="308" y="54" fill="#30475A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="17" font-weight="800">Worker</text>
+    </g>
+
+    <g transform="translate(42 270)">
+      <rect x="0" y="0" width="410" height="132" rx="22" fill="#FFFFFF" stroke="#E7EFF4" filter="url(#softShadow)"/>
+      <text x="24" y="38" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="20" font-weight="800">Portfolio build highlights</text>
+      <circle cx="32" cy="68" r="5" fill="#2E9BD6"/>
+      <text x="48" y="74" fill="#405A6E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">TypeScript React Native app with Expo</text>
+      <circle cx="32" cy="96" r="5" fill="#67B97A"/>
+      <text x="48" y="102" fill="#405A6E" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16">Cloudflare KV/D1 backend and secure AI proxy</text>
+    </g>
+  </g>
+
+  <g transform="translate(642 54)" filter="url(#shadow)">
+    <rect x="0" y="0" width="290" height="540" rx="48" fill="url(#phone)"/>
+    <rect x="16" y="16" width="258" height="508" rx="36" fill="#F7FBFF"/>
+    <rect x="99" y="30" width="92" height="8" rx="4" fill="#101923" opacity="0.55"/>
+
+    <text x="36" y="78" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Week</text>
+    <text x="36" y="104" fill="#658094" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Jul 6 - Jul 12 | 29.5h</text>
+
+    <g transform="translate(36 126)">
+      <rect x="0" y="0" width="218" height="336" rx="22" fill="#FFFFFF"/>
+      <g fill="#8AA1B2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="11" font-weight="700">
+        <text x="18" y="30">M</text><text x="48" y="30">T</text><text x="78" y="30">W</text><text x="108" y="30">T</text><text x="138" y="30">F</text><text x="168" y="30">S</text><text x="198" y="30">S</text>
+      </g>
+      <g stroke="#E4EEF5" stroke-width="1">
+        <line x1="18" y1="48" x2="200" y2="48"/><line x1="18" y1="92" x2="200" y2="92"/><line x1="18" y1="136" x2="200" y2="136"/><line x1="18" y1="180" x2="200" y2="180"/><line x1="18" y1="224" x2="200" y2="224"/><line x1="18" y1="268" x2="200" y2="268"/><line x1="18" y1="312" x2="200" y2="312"/>
+      </g>
+      <rect x="20" y="58" width="38" height="58" rx="10" fill="#DDF1FF"/>
+      <rect x="80" y="54" width="40" height="82" rx="10" fill="#E7F4E6"/>
+      <rect x="139" y="76" width="40" height="52" rx="10" fill="#FFEBC7"/>
+      <rect x="50" y="156" width="40" height="72" rx="10" fill="#EBDFFF"/>
+      <rect x="109" y="152" width="40" height="48" rx="10" fill="#F7DED8"/>
+      <rect x="168" y="182" width="34" height="70" rx="10" fill="#DDF1FF"/>
+      <rect x="20" y="250" width="52" height="42" rx="10" fill="#DCEFE8"/>
+      <rect x="94" y="248" width="50" height="54" rx="10" fill="#FFEBC7"/>
+    </g>
+
+    <g transform="translate(36 478)">
+      <rect x="0" y="0" width="218" height="30" rx="15" fill="#E8F5FD"/>
+      <circle cx="24" cy="15" r="6" fill="#2E9BD6"/>
+      <text x="42" y="20" fill="#2A5570" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">AI tuned: 4 validated swaps</text>
+    </g>
+  </g>
+
+  <g transform="translate(958 116)">
+    <rect x="0" y="0" width="258" height="92" rx="22" fill="#FFFFFF" stroke="#E7EFF4" filter="url(#softShadow)"/>
+    <text x="24" y="34" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Photo timetable</text>
+    <text x="24" y="58" fill="#658094" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Vision OCR to fixed blocks</text>
+    <rect x="204" y="24" width="34" height="44" rx="9" fill="#DDF1FF"/>
+    <circle cx="228" cy="36" r="3" fill="#2E9BD6"/>
+    <path d="M210 59 L217 49 L222 55 L229 45 L236 59 Z" fill="#2E9BD6"/>
+  </g>
+
+  <g transform="translate(958 246)">
+    <rect x="0" y="0" width="258" height="92" rx="22" fill="#FFFFFF" stroke="#E7EFF4" filter="url(#softShadow)"/>
+    <text x="24" y="34" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Sequence-aware</text>
+    <text x="24" y="58" fill="#658094" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Directional pair scoring</text>
+    <circle cx="221" cy="46" r="19" fill="#EAF7EF"/>
+    <path d="M210 39 H226 M222 35 L227 39 L222 43 M232 53 H216 M220 49 L215 53 L220 57" fill="none" stroke="#4CA66A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(958 376)">
+    <rect x="0" y="0" width="258" height="92" rx="22" fill="#FFFFFF" stroke="#E7EFF4" filter="url(#softShadow)"/>
+    <text x="24" y="34" fill="#183346" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="800">Calendar sync</text>
+    <text x="24" y="58" fill="#658094" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13">Import, push, reconcile</text>
+    <rect x="203" y="27" width="36" height="36" rx="9" fill="#FFF3D7"/>
+    <line x1="203" y1="39" x2="239" y2="39" stroke="#C47A00" stroke-width="2.5"/>
+    <line x1="212" y1="23" x2="212" y2="32" stroke="#C47A00" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="230" y1="23" x2="230" y2="32" stroke="#C47A00" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <path d="M932 164 H958" stroke="#7CBFE6" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M932 292 H958" stroke="#67B97A" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M932 422 H958" stroke="#E4A83A" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
